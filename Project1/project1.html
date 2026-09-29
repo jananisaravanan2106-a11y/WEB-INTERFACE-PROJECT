@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter App</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f5f5f5;
+        }
+
+        h2{
+            color: #333;
+        }
+
+        h1{
+            font-size: 50px;
+            color: #222;
+        }
+
+        button{
+            padding: 12px 20px;
+            margin: 8px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .inc{
+            background-color: green;
+        }
+
+        .inc:hover{
+            background-color: darkgreen;
+        }
+
+        .dec{
+            background-color: red;
+        }
+
+        .dec:hover{
+            background-color: darkred;
+        }
+
+        .reset{
+            background-color: gray;
+        }
+
+        .reset:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Counter App</h2>
+
+<h1 id="count">0</h1>
+
+<button class="inc" onclick="increment()">+</button>
+<button class="dec" onclick="decrement()">-</button>
+<button class="reset" onclick="reset()">Reset</button>
+
+<script>
+
+let count = 0;
+let display = document.getElementById("count");
+
+function increment(){
+    count++;
+    display.innerHTML = count;
+}
+
+function decrement(){
+    count--;
+    display.innerHTML = count;
+}
+
+function reset(){
+    count = 0;
+    display.innerHTML = count;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.card {
+  width: 350px;
+  margin: 50px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px gray;
+  font-family: Arial;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 15px 0;
+}
+
+.card h3 {
+  text-align: left;
+  margin: 12px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

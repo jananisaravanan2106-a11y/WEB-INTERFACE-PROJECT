@@ -1,0 +1,190 @@
+.navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 15px #0001;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.logo span,
+h1 span {
+  color: #6c63ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #6c63ff;
+}
+
+.home,
+.page {
+  min-height: calc(100vh - 75px);
+  padding: 80px 10%;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f3ff, #ffffff);
+}
+
+.home h1 {
+  font-size: 65px;
+  margin: 10px 0;
+}
+
+.home h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  max-width: 650px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.small {
+  color: #6c63ff !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btn,
+button {
+  display: inline-block;
+  margin: 25px 10px 0 0;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second {
+  background: #222;
+}
+
+.page {
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 48px;
+  margin: 15px 0 30px;
+}
+
+.page > p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.8;
+  color: #666;
+}
+
+.info-box,
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.info-box > div,
+.card,
+.resume-box,
+.contact-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px #0001;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card p {
+  color: #666;
+  margin: 12px 0;
+}
+
+.resume-box {
+  max-width: 650px;
+  margin: auto;
+  line-height: 2;
+}
+
+.resume-box h3 {
+  margin-top: 15px;
+  color: #6c63ff;
+}
+
+.contact-box {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-box textarea {
+  height: 150px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .home h1 {
+    font-size: 45px;
+  }
+
+  .info-box,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

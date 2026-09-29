@@ -1,0 +1,76 @@
+.hobbies-page {
+  background: #F4EFE4;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.hobbies-heading {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: #2B2620;
+  margin-bottom: 24px;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+}
+
+.hobby-card {
+  position: relative;
+  background: #FBF7EF;
+  border: 1px solid #E4DCCB;
+  border-radius: 4px;
+  padding: 28px 24px 22px;
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  box-shadow: 0 1px 0 rgba(60, 50, 30, 0.04);
+  overflow: hidden;
+}
+
+.hobby-card__ring {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px dashed var(--accent);
+  opacity: 0.5;
+}
+
+.hobby-card__badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.hobby-card__tag {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 6px;
+}
+
+.hobby-card__title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #2B2620;
+  font-weight: 600;
+}
+
+.hobby-card__description {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #5C5342;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
